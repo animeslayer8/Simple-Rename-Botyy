@@ -7,10 +7,9 @@ from config import ADMIN
 async def start_cmd(bot, msg):
     txt="This is personal use bot 🙏. Do you want your own bot? 👇 Click the source code to deploy"
     btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/MrMKN/Simple-Rename-Bot")
+        InlineKeyboardButton("🤖 SOURCE CODE", url="https://t.me/TeamWarlords ")
         ],[
-        InlineKeyboardButton("🖥️ How To Deploy", url="https://youtu.be/oc847WvOUaI")
-    ]])
+        
     if msg.from_user.id != ADMIN:
         return await msg.reply_text(text=txt, reply_markup=btn, disable_web_page_preview = True)
     await start(bot, msg, cb=False)
@@ -20,7 +19,7 @@ async def start_cmd(bot, msg):
 async def start(bot, msg, cb=True):   
     txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/MrMKN>MrMKN</a></b>"                                     
     button= [[
-        InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/mkn_bots_updates")
+        InlineKeyboardButton("🤖 Main channel", url="https://t.me/Anime_Complex")
         ],[
         InlineKeyboardButton("ℹ️ Help", callback_data="help"),
         InlineKeyboardButton("📡 About", callback_data="about") 
